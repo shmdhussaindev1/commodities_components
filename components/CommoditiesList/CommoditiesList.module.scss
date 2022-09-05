@@ -25,10 +25,9 @@ $color_red: $down_color;
 $color_neutral: $neutral_icon_color;
 
 .comp {
-	// @include comp_v_pad;
-	// @include sna_flex_item();
 	width: 100%;
 }
+
 .data_table {
 	width: 100%;
 	@media only screen and (max-width: 767px) {
