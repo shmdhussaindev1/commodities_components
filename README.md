@@ -1,7 +1,7 @@
 # Commodities List component Demo
 
 
-**DEMO URL:** https://ticker-demo.vercel.app/
+**DEMO URL:** https://commodities-components.vercel.app/
 
 
 This is the demo project created for showing how can we use the ticker react component to move the items as in snabusiness.com latest news ticker.
