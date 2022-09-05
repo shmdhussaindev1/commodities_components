@@ -1,0 +1,44 @@
+[
+	{
+		"symbol": "LCOc1",
+		"displayName": "خام برنت",
+		"marketShortName": "Oil",
+		"date": "2022-09-05T10:02:40Z",
+		"tradePrice": 95.58,
+		"openValue": 93.02,
+		"closeValue": 93.02,
+		"highValue": 95.78,
+		"lowValue": 93.02,
+		"netChange": 2.56,
+		"pctchange": 2.75,
+		"currency": "USD"
+	},
+	{
+		"symbol": "MRBNc1",
+		"displayName": "خام مربان",
+		"marketShortName": "Oil",
+		"date": "2022-09-05T08:30:00Z",
+		"tradePrice": 96.74,
+		"openValue": 94.18,
+		"closeValue": 94.5,
+		"highValue": 96.9,
+		"lowValue": 96.74,
+		"netChange": 2.24,
+		"pctchange": 2.37,
+		"currency": "USD"
+	},
+	{
+		"symbol": "WTCLc1",
+		"displayName": "النفط الأميركي الخفيف",
+		"marketShortName": "Oil",
+		"date": "2022-09-05T10:02:17Z",
+		"tradePrice": 89.2,
+		"openValue": 86.76,
+		"closeValue": 86.87,
+		"highValue": 89.35,
+		"lowValue": 86.99,
+		"netChange": 2.33,
+		"pctchange": 2.68,
+		"currency": "USD"
+	}
+]

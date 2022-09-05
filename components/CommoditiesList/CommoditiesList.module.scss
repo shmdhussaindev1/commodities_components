@@ -1,0 +1,213 @@
+// @import "../../../styles/variables";
+// @import "../../../styles/variables";
+// @import "../../../styles/mixins";
+// @import "../../../styles/mixins";
+// @import "../../../styles/breakPoints";
+// @import "../../../styles/breakPoints";
+
+/*START: spacing for demo , you can give whatever you like*/
+$v_spacing: 8px;
+$h_spacing: 8px;
+/*END: spacing for demo , you can give whatever you like*/
+/*START:colors used in the compo */
+$up_color: #2eaf28;
+$down_color: #e55446;
+$neutral_color: #717171;
+$neutral_icon_color: #bababa;
+$color_border_1: #707070;
+$color_neutral_grey_3: #707070;
+/*END:colors used in the compo */
+
+$solid_border: 1px solid $color_border_1;
+$dashed_border: 1px dashed $color_border_1;
+$color_green: $up_color;
+$color_red: $down_color;
+$color_neutral: $neutral_icon_color;
+
+.comp {
+	// @include comp_v_pad;
+	// @include sna_flex_item();
+	width: 100%;
+}
+.data_table {
+	width: 100%;
+	@media only screen and (max-width: 767px) {
+		overflow-x: auto;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border: $solid_border;
+
+		thead {
+			text-align: center;
+			th {
+				padding: $v_spacing * 1.5;
+				border-bottom: $solid_border;
+				white-space: nowrap;
+				font-weight: bold;
+				&:first-child {
+					text-align: right;
+				}
+
+				@media only screen and (min-width: 768px) {
+					&:first-child {
+						padding-right: $v_spacing * 4;
+					}
+					&:last-child {
+						padding-left: $v_spacing * 4;
+					}
+				}
+			}
+		}
+		tbody {
+			text-align: center;
+			tr {
+				position: relative;
+				&:not(:last-child) {
+					td {
+						border-bottom: $dashed_border;
+					}
+				}
+			}
+
+			td {
+				padding: $v_spacing * 1.5;
+				vertical-align: middle;
+				white-space: nowrap;
+				&:first-child {
+					text-align: right;
+				}
+				@media only screen and (min-width: 768px) {
+					border-bottom: none;
+					&:first-child {
+						padding-right: $v_spacing * 4;
+					}
+					&:last-child {
+						padding-left: $v_spacing * 4;
+					}
+				}
+			}
+		}
+	}
+}
+
+.color_green {
+	color: $color_green;
+	svg {
+		fill: $color_green;
+	}
+}
+
+.color_red {
+	color: $color_red;
+	svg {
+		fill: $color_red;
+	}
+}
+
+.color_neutral {
+	.trend_icon {
+		@media only screen and (min-width: 768px) {
+			margin-right: 1.5 * $v_spacing;
+		}
+	}
+	svg {
+		fill: $color_neutral;
+		width: 12px;
+		height: 12px;
+
+		@media only screen and (min-width: 768px) {
+		}
+	}
+}
+
+.trend_icon {
+	margin-right: $v_spacing;
+	width: 10px;
+	height: 14px;
+	display: inline-block;
+	svg {
+		display: block;
+	}
+}
+
+.col_display_name {
+	width: 16%;
+
+	@media only screen and (min-width: 768px) {
+		text-align: right;
+	}
+}
+.col_price {
+	width: 16%;
+	text-align: center;
+
+	@media only screen and (min-width: 768px) {
+		text-align: right;
+	}
+}
+td.col_change {
+	direction: ltr;
+}
+.col_change {
+	width: 16%;
+	text-align: center;
+
+	@media only screen and (min-width: 768px) {
+		text-align: right;
+	}
+
+	&td {
+		direction: ltr;
+	}
+}
+// td.col_pct_change {
+//     direction: ltr;
+// }
+.col_pct_change {
+	width: 16%;
+	text-align: center;
+
+	@media only screen and (min-width: 768px) {
+		text-align: right;
+	}
+}
+.col_open_val {
+	width: 16%;
+	text-align: center;
+
+	@media only screen and (min-width: 768px) {
+		text-align: right;
+	}
+}
+.col_close_val {
+	width: 16%;
+	text-align: center;
+
+	@media only screen and (min-width: 768px) {
+		text-align: right;
+	}
+}
+.currency_note {
+	padding-bottom: 1 * $h_spacing;
+	color: $color_neutral_grey_3;
+	font-size: 0.875rem;
+	line-height: 1;
+	// margin-top: -0.875rem;
+	@media only screen and (min-width: 768px) {
+		text-align: left;
+		font-size: 0.9rem;
+		margin-top: -0.9rem;
+	}
+}
+
+// Hiding some columns on mobile layout
+
+.mobile_hidden {
+	display: none;
+	@media only screen and (min-width: 768px) {
+		display: table-cell;
+	}
+}
